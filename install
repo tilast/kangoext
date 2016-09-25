@@ -1,4 +1,4 @@
 #!/bin/sh
 
-wget http://kangoextensions.com/kango/kango-framework-latest.zip
+curl -O http://kangoextensions.com/kango/kango-framework-latest.zip
 tar -xvf kango-framework-latest.zip kango
