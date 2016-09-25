@@ -1,0 +1,9 @@
+#!/bin/sh
+
+curl -O http://kangoextensions.com/kango/kango-framework-latest.zip &&
+mkdir kango-archive &&
+tar -xvf kango-framework-latest.zip -C kango-archive &&
+touch kango-archive/kangoext &&
+chmod 755 kango-archive/kangoext &&
+echo "#!/usr/bin/python" >> kango-archive/kangoext &&
+cat kango-archive/kango.py >> kango-archive/kangoext
